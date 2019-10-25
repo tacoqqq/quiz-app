@@ -1,22 +1,36 @@
 body {
-    width: 80%;
     margin: 0 auto;
     font-family: "Source Sans Pro", "Georgia", sans-serif;
+    position: relative;
   }
   
-  
+body::after {
+  content: "";
+  background: url('img/american-flag-wind.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
   header {
     text-align: center;
-    height: 80px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 10px;
   }
   
   main {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    font-size: 18px;
+    height: 100vh;
   }
-
 
   .display-score > ul  {
     display: flex;
@@ -36,6 +50,11 @@ body {
     border: 1px solid #ccc;
     margin-top: 0px;
   }
+
+  label:hover{
+    background-color: rgba(255,255,255);
+    cursor: pointer;
+  }
   
   button {
     padding: 10px;
@@ -53,12 +72,19 @@ body {
   }
   
   legend {
-   font-size: 18px;
-   color: darkblue
+   font-size: 22px;
+   color: white;
+   background-color: #003366;
+   padding: 10px;
+   border-radius: 4px;
   }
   
   fieldset {
-    padding: 20px;
+    padding: 40px;
+    padding-top: 20px;
+    border: 1px solid #333;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
   }
   
   .correct-answer-message {

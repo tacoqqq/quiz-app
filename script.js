@@ -109,7 +109,7 @@ function isCorrect() {
             $('.next-btn').text('See Result >')
         }
 
-        //get the inputanswer value and verify if it's correct
+        //get the input answer value and verify if it's correct
         let inputName = 'question' + currentQuestion;
         let answer = $(`input[name=${inputName}]:checked`).val();
         console.log(answer);
@@ -190,7 +190,7 @@ function restartQuiz(){
 }
 
 
-function test (){
+function test(){
     startTest();
     isCorrect();
     nextQuestion();
