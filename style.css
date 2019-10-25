@@ -45,13 +45,14 @@ body::after {
   }
   
   label{
+    box-sizing: border-box;
     display: block;
     padding: 10px;
     border: 1px solid #ccc;
     margin-top: 0px;
   }
 
-  input[type=radio]:checked{
+  input:checked{
     background-color: rgba(255,255,255);
     cursor: pointer;
   }
@@ -64,6 +65,7 @@ body::after {
     background: orange;
     box-shadow: 2px 2px #ccc;
   }
+  
   
   button:hover {
     background: darkorange;
