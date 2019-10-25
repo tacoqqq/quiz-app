@@ -12,7 +12,13 @@ body {
     margin-bottom: 20px;
   }
   
-  .display-result > ul  {
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+  .display-score > ul  {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -20,7 +26,7 @@ body {
     font-size: 24px;
   }
   
-  .display-result > ul > li {
+  .display-score > ul > li {
     margin: 5px;
   }
   
